@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure CSRF Test</title>
+</head>
+<body>
+
+<h2>Secure Form (With CSRF Token)</h2>
+
+<form action="/transfer" method="POST">
+    <input type="hidden" name="csrf_token" value="ABC123456">
+
+    <label>Recipient:</label>
+    <input type="text" name="recipient"><br><br>
+
+    <label>Amount:</label>
+    <input type="number" name="amount"><br><br>
+
+    <button type="submit">Transfer</button>
+</form>
+
+</body>
+</html>
