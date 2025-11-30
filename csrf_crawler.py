@@ -35,6 +35,6 @@ def analyze_page(url):
             print("GET method — typically not vulnerable")
 
 if __name__ == "__main__":
-    target = "http://example.com"
+    target = "https://sidharthkv1100.github.io/CSRF-/"
     analyze_page(target)
 
